@@ -4,10 +4,10 @@ WORKDIR /src
 
 # Copy everything and restore
 COPY . . 
-RUN dotnet restore UltraNetFrameworkDemo.sln
+RUN dotnet restore UltraNetDemo.sln
 
 # Build the project
-RUN dotnet publish UltraNetFrameworkDemo.sln -c Release -o /app/publish
+RUN dotnet publish UltraNetDemo.sln -c Release -o /app/publish
 
 # Use the ASP.NET runtime image
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime

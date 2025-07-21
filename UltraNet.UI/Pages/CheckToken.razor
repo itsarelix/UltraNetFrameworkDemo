@@ -1,0 +1,80 @@
+﻿@page "/checktoken"
+@using UltraNet.UI.Services
+@inject IHttpClientFactory ClientFactory
+@inject ITokenStorageService TokenStorage
+
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-7 col-sm-10">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h3 class="purpleTitle text-center mb-4">Check Token</h3>
+
+                    <button @onclick="CheckCurrentToken" class="btn purpleButton w-100">Check</button>
+
+                    @if (!string.IsNullOrEmpty(TokenMessage))
+                    {
+                        @if (isValid)
+                        {
+                            <div class="alert alert-success mt-3">@TokenMessage</div>
+
+                        }
+                        else
+                        {
+                            <div class="alert alert-danger mt-3">@TokenMessage</div>
+                        }
+                    }
+       
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+@code {
+    string TokenMessage = "";
+    private bool isValid = true;
+
+
+    private async Task CheckCurrentToken()
+    {
+        try
+        {
+            var token = await TokenStorage.GetToken();
+            if (string.IsNullOrWhiteSpace(token))
+            {
+                TokenMessage = "Token not found!";
+                isValid = false;
+                return;
+            }
+
+            var client = ClientFactory.CreateClient("PublicClient");
+            client.DefaultRequestHeaders.Authorization =
+                new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+            var response = await client.GetAsync("api/auth/checktoken");
+
+            if (response.IsSuccessStatusCode)
+            {
+                TokenMessage = "Token is valid";
+                isValid = true;
+
+            }
+            else
+            {
+                TokenMessage = "Token is not valid";
+                isValid = false;
+            }
+
+
+        }
+        catch (Exception ex)
+        {
+            TokenMessage = $" Error: {ex.Message}";
+        }
+    }
+}

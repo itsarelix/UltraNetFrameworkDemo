@@ -1,0 +1,26 @@
+﻿@inherits LayoutComponentBase
+
+<PageTitle>UltraNet.UI</PageTitle>
+<div class="ultranet-background"></div>
+<div class="page">
+
+    <main>
+        <header class="hero-header">
+            <div class="hero-content">
+                <h1>Welcome to UltraNet!</h1>
+                <button class="home-button" @onclick="@(() => NavigateTo("/"))">Home</button>
+            </div>
+        </header>
+      
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+
+@code {
+    [Inject] private NavigationManager Nav { get; set; }
+
+    private void NavigateTo(string url) => Nav.NavigateTo(url);
+}
+

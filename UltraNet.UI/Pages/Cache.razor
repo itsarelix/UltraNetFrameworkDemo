@@ -1,0 +1,63 @@
+﻿@page "/cache"
+@using UltraNet.UI.Model
+@using UltraNet.UI.Services
+@inject ICacheService CacheService
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-7 col-sm-10">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h3 class="purpleTitle text-center mb-4">Cache Data</h3>
+                    <EditForm Model="@model" OnValidSubmit="GetFromCache">
+                        <DataAnnotationsValidator />
+
+                        <div class="form-floating mb-3">
+                            <InputText @bind-Value="model.Key" class="form-control" id="keyInput" placeholder="Kay" />
+                            <label for="keyInput">Kay</label>
+                            <ValidationMessage For="@(() => model.Key)" />
+                        </div>
+
+                        <button type="submit" class="btn purpleButton w-100">Send</button>
+
+                        @if (!string.IsNullOrEmpty(message))
+                        {
+                            <div class="alert alert-success mt-3">@message</div>
+                        }
+                        else if (!string.IsNullOrEmpty(error))
+                        {
+                            <div class="alert alert-danger mt-3">@error</div>
+
+                        }
+                    </EditForm>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private string message = "";
+    private string error = "";
+
+
+    private CacheRequest model = new();
+
+    private async Task GetFromCache()
+    {
+        var result = await CacheService.CacheData(model);
+        if (result == null || !result.IsSuccess)
+        {
+            error = " Failed to get data from cache.";
+            message = "";
+            return;
+
+        }
+
+        message = $" {result?.Message}";
+        error = "";
+       
+    }
+
+}

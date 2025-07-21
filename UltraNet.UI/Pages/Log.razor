@@ -1,0 +1,52 @@
+﻿@page "/log"
+@using UltraNet.UI.Services
+@using UltraNet.UI.Model
+@inject ILogService LogService
+
+
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-7 col-sm-10">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h3 class="purpleTitle text-center mb-4">Write Log</h3>
+
+                    <button @onclick="WriteLog" class="btn purpleButton w-100">Log</button>
+
+                    @if (!string.IsNullOrEmpty(message))
+                    {
+                        <div class="alert alert-success mt-3">@message</div>
+                    }
+                    else if (!string.IsNullOrEmpty(error))
+                    {
+                        <div class="alert alert-danger mt-3">@error</div>
+
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@code {
+    private string message = "";
+    private string error = "";
+
+    private async Task WriteLog()
+    {
+        var result = await LogService.LogDataAsync();
+        if (result == null || !result.IsSuccess)
+        {
+            error = "Failed to write logs.";
+            message = "";
+        }
+        else
+        {
+            message = $" {result.Message}";
+            error = "";
+        }
+    }
+}

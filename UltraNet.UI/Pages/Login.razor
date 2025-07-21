@@ -1,0 +1,64 @@
+﻿@page "/login"
+@using UltraNet.UI.Model
+@using UltraNet.UI.Services
+@inject IAuthenticationService AuthService
+@inject NavigationManager Nav
+
+
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-7 col-sm-10">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h3 class="purpleTitle text-center mb-4">Login</h3>
+                    <EditForm Model="@model" OnValidSubmit="HandleLogin">
+                        <DataAnnotationsValidator />
+
+
+                        <div class="form-floating mb-3">
+                            <InputText @bind-Value="model.Username" class="form-control" id="usernameInput" placeholder="Username" />
+                            <label for="usernameInput">Username</label>
+                            <ValidationMessage For="@(() => model.Username)" />
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <InputText @bind-Value="model.Password" type="password" class="form-control" id="passwordInput" placeholder="Password" />
+                            <label for="passwordInput">Password</label>
+                            <ValidationMessage For="@(() => model.Password)" />
+                        </div>
+
+                        <button type="submit" class="btn purpleButton w-100">Login</button>
+
+                        @if (!string.IsNullOrEmpty(message))
+                        {
+                            <div class="alert alert-danger mt-3">@message</div>
+                        }
+
+                    </EditForm>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@code {
+    private LoginRequest model = new();
+    private string? message;
+
+    private async Task HandleLogin()
+    {
+        var result = await AuthService.LoginAsync(model);
+
+        if (result == null || !result.IsSuccess)
+        {
+            message = result?.Message ?? "Login failed.";
+            return;
+        }
+
+        message = "";
+        Nav.NavigateTo("/");
+    }
+}

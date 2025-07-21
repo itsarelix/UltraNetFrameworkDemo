@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UltraNet.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+60d9f85d5e53c211e78ce0bd3292862180718a38")]
 [assembly: System.Reflection.AssemblyProductAttribute("UltraNet.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UltraNet.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

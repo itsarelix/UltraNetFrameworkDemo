@@ -1,0 +1,13 @@
+E:\UltraNetFrameworkDemo\UltraNet.Framework\bin\Release\net8.0\UltraNet.Framework.deps.json
+E:\UltraNetFrameworkDemo\UltraNet.Framework\bin\Release\net8.0\UltraNet.Framework.dll
+E:\UltraNetFrameworkDemo\UltraNet.Framework\bin\Release\net8.0\UltraNet.Framework.pdb
+E:\UltraNetFrameworkDemo\UltraNet.Framework\obj\Release\net8.0\UltraNet.Framework.csproj.AssemblyReference.cache
+E:\UltraNetFrameworkDemo\UltraNet.Framework\obj\Release\net8.0\UltraNet.Framework.GeneratedMSBuildEditorConfig.editorconfig
+E:\UltraNetFrameworkDemo\UltraNet.Framework\obj\Release\net8.0\UltraNet.Framework.AssemblyInfoInputs.cache
+E:\UltraNetFrameworkDemo\UltraNet.Framework\obj\Release\net8.0\UltraNet.Framework.AssemblyInfo.cs
+E:\UltraNetFrameworkDemo\UltraNet.Framework\obj\Release\net8.0\UltraNet.Framework.csproj.CoreCompileInputs.cache
+E:\UltraNetFrameworkDemo\UltraNet.Framework\obj\Release\net8.0\UltraNet.Framework.sourcelink.json
+E:\UltraNetFrameworkDemo\UltraNet.Framework\obj\Release\net8.0\UltraNet.Framework.dll
+E:\UltraNetFrameworkDemo\UltraNet.Framework\obj\Release\net8.0\refint\UltraNet.Framework.dll
+E:\UltraNetFrameworkDemo\UltraNet.Framework\obj\Release\net8.0\UltraNet.Framework.pdb
+E:\UltraNetFrameworkDemo\UltraNet.Framework\obj\Release\net8.0\ref\UltraNet.Framework.dll

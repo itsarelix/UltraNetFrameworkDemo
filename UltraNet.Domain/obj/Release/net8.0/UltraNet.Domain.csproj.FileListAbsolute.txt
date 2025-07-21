@@ -1,0 +1,12 @@
+E:\UltraNetFrameworkDemo\UltraNet.Domain\bin\Release\net8.0\UltraNet.Domain.deps.json
+E:\UltraNetFrameworkDemo\UltraNet.Domain\bin\Release\net8.0\UltraNet.Domain.dll
+E:\UltraNetFrameworkDemo\UltraNet.Domain\bin\Release\net8.0\UltraNet.Domain.pdb
+E:\UltraNetFrameworkDemo\UltraNet.Domain\obj\Release\net8.0\UltraNet.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\UltraNetFrameworkDemo\UltraNet.Domain\obj\Release\net8.0\UltraNet.Domain.AssemblyInfoInputs.cache
+E:\UltraNetFrameworkDemo\UltraNet.Domain\obj\Release\net8.0\UltraNet.Domain.AssemblyInfo.cs
+E:\UltraNetFrameworkDemo\UltraNet.Domain\obj\Release\net8.0\UltraNet.Domain.csproj.CoreCompileInputs.cache
+E:\UltraNetFrameworkDemo\UltraNet.Domain\obj\Release\net8.0\UltraNet.Domain.sourcelink.json
+E:\UltraNetFrameworkDemo\UltraNet.Domain\obj\Release\net8.0\UltraNet.Domain.dll
+E:\UltraNetFrameworkDemo\UltraNet.Domain\obj\Release\net8.0\refint\UltraNet.Domain.dll
+E:\UltraNetFrameworkDemo\UltraNet.Domain\obj\Release\net8.0\UltraNet.Domain.pdb
+E:\UltraNetFrameworkDemo\UltraNet.Domain\obj\Release\net8.0\ref\UltraNet.Domain.dll

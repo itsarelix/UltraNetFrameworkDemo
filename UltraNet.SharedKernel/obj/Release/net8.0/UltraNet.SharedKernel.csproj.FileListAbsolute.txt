@@ -1,0 +1,12 @@
+E:\UltraNetFrameworkDemo\UltraNet.SharedKernel\bin\Release\net8.0\UltraNet.SharedKernel.deps.json
+E:\UltraNetFrameworkDemo\UltraNet.SharedKernel\bin\Release\net8.0\UltraNet.SharedKernel.dll
+E:\UltraNetFrameworkDemo\UltraNet.SharedKernel\bin\Release\net8.0\UltraNet.SharedKernel.pdb
+E:\UltraNetFrameworkDemo\UltraNet.SharedKernel\obj\Release\net8.0\UltraNet.SharedKernel.GeneratedMSBuildEditorConfig.editorconfig
+E:\UltraNetFrameworkDemo\UltraNet.SharedKernel\obj\Release\net8.0\UltraNet.SharedKernel.AssemblyInfoInputs.cache
+E:\UltraNetFrameworkDemo\UltraNet.SharedKernel\obj\Release\net8.0\UltraNet.SharedKernel.AssemblyInfo.cs
+E:\UltraNetFrameworkDemo\UltraNet.SharedKernel\obj\Release\net8.0\UltraNet.SharedKernel.csproj.CoreCompileInputs.cache
+E:\UltraNetFrameworkDemo\UltraNet.SharedKernel\obj\Release\net8.0\UltraNet.SharedKernel.sourcelink.json
+E:\UltraNetFrameworkDemo\UltraNet.SharedKernel\obj\Release\net8.0\UltraNet.SharedKernel.dll
+E:\UltraNetFrameworkDemo\UltraNet.SharedKernel\obj\Release\net8.0\refint\UltraNet.SharedKernel.dll
+E:\UltraNetFrameworkDemo\UltraNet.SharedKernel\obj\Release\net8.0\UltraNet.SharedKernel.pdb
+E:\UltraNetFrameworkDemo\UltraNet.SharedKernel\obj\Release\net8.0\ref\UltraNet.SharedKernel.dll

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UltraNet.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+60d9f85d5e53c211e78ce0bd3292862180718a38")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+175b691b3fe9e45e1a37034b377b2d20ebc12de9")]
 [assembly: System.Reflection.AssemblyProductAttribute("UltraNet.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UltraNet.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

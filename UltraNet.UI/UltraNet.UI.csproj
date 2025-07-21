@@ -16,7 +16,7 @@
 
 
 	<ItemGroup>
-		  <Content Update="wwwroot\**\*">
+		  <Content Update="wwwroot/**">
 			    <CopyToPublishDirectory>Always</CopyToPublishDirectory>
 		</Content>
 	</ItemGroup>

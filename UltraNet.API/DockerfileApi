@@ -12,4 +12,4 @@ COPY --from=build /app/publish .
 
 EXPOSE 5000
 
-ENTRYPOINT ["dotnet", "UltraNet.Api.dll"]
+ENTRYPOINT ["dotnet", "UltraNet.API.dll"]

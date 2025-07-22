@@ -15,7 +15,7 @@ services:
     name: ultranet-api
     env: docker
     plan: free
-    dockerfilePath: ./UltraNet.API/DockerfileAPI
+    dockerfilePath: ./UltraNet.API/DockerfileApi
     repo: https://github.com/itsarelix/UltraNetFrameworkDemo
     branch: main
     autoDeploy: true

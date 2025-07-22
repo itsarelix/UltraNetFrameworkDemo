@@ -3,7 +3,7 @@ services:
     name: ultranet-ui
     env: docker
     plan: free
-    dockerfilePath: DockerfileUI
+    dockerfilePath: ./UltraNet.UI/DockerfileUI
     repo: https://github.com/itsarelix/UltraNetFrameworkDemo
     branch: main
     autoDeploy: true
@@ -15,7 +15,7 @@ services:
     name: ultranet-api
     env: docker
     plan: free
-    dockerfilePath: DockerfileAPI
+    dockerfilePath: ./UltraNet.API/DockerfileAPI
     repo: https://github.com/itsarelix/UltraNetFrameworkDemo
     branch: main
     autoDeploy: true
